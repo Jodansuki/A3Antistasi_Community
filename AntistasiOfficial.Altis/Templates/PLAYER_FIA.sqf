@@ -51,46 +51,48 @@ guer_soldierArray = [guer_sol_RFL,guer_sol_R_L,guer_sol_UN,guer_sol_AR,guer_sol_
 
 // ===== GEAR ===== \\
 guer_radio_TFAR = "tf_anprc152";
-if !(activeAFRF) then {
+if !(activeAFRF && activeUSAF && activeGREF) then {
 	/*
 	These are the vehicles and statics that you can buy at HQ. Currently, the array requires a strict(!) order.
 	0-2: civilian vehicles
 	3-10: military vehicles and statics
 	*/
 
-if (worldname == "Tanoa") then {
-	vfs = [
-		"C_Offroad_02_unarmed_F_green",
-		"C_Van_01_transport_F",
-		"C_Heli_Light_01_civil_F",
-		"O_LSV_02_unarmed_F",
-		"I_C_Offroad_02_unarmed_F",
-		"I_C_Van_01_transport_F",
-		"I_G_Offroad_01_armed_F",
-		"I_HMG_01_high_F",
-		"I_G_Mortar_01_F",
-		"I_static_AT_F",
-		"I_static_AA_F",
-		"C_Quadbike_01_F"
+	if (worldname == "Tanoa") then {
+		vfs = [
+			"C_Offroad_02_unarmed_F_green",
+			"C_Van_01_transport_F",
+			"C_Heli_Light_01_civil_F",
+			"C_Quadbike_01_F",
+			"O_LSV_02_unarmed_F",
+			"I_C_Offroad_02_unarmed_F",
+			"I_C_Van_01_transport_F",
+			"I_G_Offroad_01_armed_F",
+			"I_HMG_01_high_F",
+			"I_G_Mortar_01_F",
+			"I_static_AT_F",
+			"I_static_AA_F"
+			
 		];
 
-		} else {
+	} else {
 
-	vfs = [
-		"C_Offroad_01_F",
-		"C_Van_01_transport_F",
-		"C_Heli_Light_01_civil_F",
-		"O_LSV_02_unarmed_F",
-		"B_G_Offroad_01_F",
-		"B_G_Van_01_transport_F",
-		"B_G_Offroad_01_armed_F",
-		"B_HMG_01_high_F",
-		"B_G_Mortar_01_F",
-		"B_static_AT_F",
-		"B_static_AA_F",
-		"C_Quadbike_01_F"
-	];
-};
+		vfs = [
+			"C_Offroad_01_F",
+			"C_Van_01_transport_F",
+			"C_Heli_Light_01_civil_F",
+			"C_Quadbike_01_F",
+			"O_LSV_02_unarmed_F",
+			"B_G_Offroad_01_F",
+			"B_G_Van_01_transport_F",
+			"B_G_Offroad_01_armed_F",
+			"B_HMG_01_high_F",
+			"B_G_Mortar_01_F",
+			"B_static_AT_F",
+			"B_static_AA_F"
+			
+		];
+	};
 
 	guer_gear_vestAdv = "V_PlateCarrierIAGL_oli";
 	guer_gear_vestMedic = "";
@@ -125,7 +127,8 @@ if (worldname == "Tanoa") then {
 	vfs = [
 		"C_Offroad_01_F",
 		"C_Van_01_transport_F",
-		"RHS_Mi8amt_civilian",
+		"rhs_uh1h_idap",
+		"C_Quadbike_01_F",
 		"rhs_uaz_open_MSV_01",
 		"B_G_Offroad_01_F",
 		"rhs_gaz66o_msv",
@@ -134,8 +137,9 @@ if (worldname == "Tanoa") then {
 		"rhs_2b14_82mm_msv",
 		"rhs_Kornet_9M133_2_vdv",
 		"rhs_Igla_AA_pod_msv",
-		"C_Quadbike_01_F",
-		"rhs_gaz66_r142_vdv"
+		"rhs_gaz66_r142_vdv",
+		"rhsgref_ins_g_ZU23",
+		"B_G_Offroad_01_AT_F"
 	];
 
 	guer_gear_vestAdv = "rhs_6b23_6sh116_flora";
