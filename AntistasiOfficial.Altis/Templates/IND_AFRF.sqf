@@ -71,7 +71,7 @@ vehPatrol =			["rhs_tigr_m_vdv","RHS_Mi8mt_vvsc"]; // vehicles used for road pat
 if (activeGREF) then {vehPatrol = vehPatrol + ["rhsgref_BRDM2_HQ_vdv"];};
 vehAPC = 			["rhs_btr80_vdv"]; // APCs
 vehIFV = 			["rhs_bmp2d_vdv","rhs_bmp1p_vdv","rhs_bmd2m","rhs_bmd2k"]; // IFVs
-vehTank = 			["rhs_t72bb_tv","rhs_t72bd_tv","rhs_t90a_tv"]; // MBTs
+vehTank = 			["rhs_t72bb_tv","rhs_t72bd_tv","rhs_t90a_tv","rhs_t72be_tv","rhs_t80um"]; // MBTs
 vehSupply = 		["rhs_gaz66_ammo_vdv","RHS_Ural_Fuel_VDV_01","rhs_gaz66_repair_vdv","rhs_gaz66_ap2_vdv"]; // supply vehicles (ammo, fuel, med)
 vehAmmo = 			"rhs_gaz66_ammo_vdv"; // ammo truck, for special missions
 vehFuel = 			["RHS_Ural_Fuel_VDV_01"]; // fuel truck for missions
@@ -377,8 +377,7 @@ if (activeGREF) then {
 	"rhsgref_5Rnd_762x54_m38",
 	"rhsgref_5Rnd_792x57_kar98k",
 	"rhsgref_20rnd_765x17_vz61",
-	"6Rnd_GreenSignal_F",
-	"UGL_FlareWhite_F"
+	"6Rnd_GreenSignal_F"
 	];
 } else {
 	unlockedWeapons = [
@@ -396,7 +395,6 @@ if (activeGREF) then {
 		"rhs_mag_9x18_8_57N181S",
 		"rhs_mag_9x19mm_7n31_44",
 		"6Rnd_GreenSignal_F"
-
 	];
 };
 
