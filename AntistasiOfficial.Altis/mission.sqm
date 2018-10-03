@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=931;
+		nextID=937;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=428;
+		nextID=444;
 	};
 	class Camera
 	{
 		pos[]={3709.3755,99.568268,10310.304};
-		dir[]={-0.70126104,-0.71039939,0.059864335};
-		up[]={-0.70782828,0.7037949,0.06042479};
-		aside[]={0.085057281,-3.6870188e-007,0.99638343};
+		dir[]={-0.76473075,-0.63401657,0.11503996};
+		up[]={-0.6269716,0.77330941,0.094316542};
+		aside[]={0.14875832,-2.5336703e-007,0.98888308};
 	};
 };
 binarizationWanted=0;
@@ -31,24 +31,30 @@ addons[]=
 {
 	"A3_Ui_F",
 	"A3_Weapons_F_Ammoboxes",
+	"ace_cargo",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Structures_F_Civ_InfoBoards",
 	"A3_Structures_F_Civ_Camping",
+	"cba_xeh",
+	"ace_rearm",
+	"ace_dragging",
 	"A3_Modules_F",
 	"A3_Characters_F",
 	"A3_Modules_F_Hc",
+	"ace_explosives",
 	"A3_Structures_F_Mil_Cargo",
 	"A3_Structures_F_Mil_Helipads",
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Structures_F_Ind_AirPort",
 	"A3_Structures_F_Mil_BagFence",
-	"A3_Structures_F_Argo_Military_Fortifications"
+	"A3_Structures_F_Argo_Military_Fortifications",
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=13;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -65,22 +71,22 @@ class AddonsMetaData
 		};
 		class Item2
 		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item3
+		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item4
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item4
-		{
-			className="A3_Modules_F";
-			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -93,15 +99,50 @@ class AddonsMetaData
 		};
 		class Item6
 		{
+			className="ace_rearm";
+			name="ACE3 - Rearm";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item7
+		{
+			className="ace_dragging";
+			name="ACE3 - Dragging";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item8
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item10
+		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item11
 		{
 			className="A3_Structures_F_Argo";
 			name="Arma 3 Malden - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item12
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -111,6 +152,33 @@ randomSeed=8109385;
 class ScenarioData
 {
 	author="A3 Antistasi Community";
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -136,7 +204,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=326;
+		items=327;
 		class Item0
 		{
 			dataType="Marker";
@@ -473,7 +541,7 @@ class Mission
 			colorName="ColorGreen";
 			a=180;
 			b=120;
-			angle=319.12387;
+			angle=319.12381;
 			id=26;
 			atlOffset=-0.00024414063;
 		};
@@ -1820,12 +1888,13 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3635.6479,19.584385,10358.322};
-						angles[]={0,3.0601509,0};
+						angles[]={0,3.0601556,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						name="zeus";
 						isPlayable=1;
 					};
 					id=394;
@@ -10005,6 +10074,96 @@ class Mission
 					};
 				};
 				nAttributes=2;
+			};
+		};
+		class Item326
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3645.4551,16.626535,10324.277};
+			};
+			id=936;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="zeus";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 	};

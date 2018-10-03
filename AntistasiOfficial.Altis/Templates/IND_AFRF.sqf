@@ -187,8 +187,6 @@ genMissiles = [
 	"rhs_rpg7_OG7V_mag",
 	"rhs_rpg7_TBG7V_mag",
 	"rhs_rpg7_PG7V_mag",
-	"rhs_rpg26_mag",
-	"rhs_rshg2_mag",
 	"rhs_mag_9k38_rocket"
 ];
 
