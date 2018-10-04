@@ -27,9 +27,9 @@ if (activeACE) then {
 			{
 				if(isClass (configfile >> "CfgPatches" >> "adv_aceSplint")) then
 				{
-					{unlocjedItems pushback _x} foreach ["adv_ace_SPlint_splint","adv_aceCPR_AED"];
-				}				
-			}
+					{unlockedItems pushback _x} foreach ["adv_aceSplint_splint","adv_aceCPR_AED"];
+				};			
+			};
 		};
 	};
 };
