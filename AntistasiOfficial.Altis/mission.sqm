@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=444;
+		nextID=452;
 	};
 	class Camera
 	{
-		pos[]={3709.3755,99.568268,10310.304};
+		pos[]={3677.4629,50.911789,10323.363};
 		dir[]={-0.76473075,-0.63401657,0.11503996};
 		up[]={-0.6269716,0.77330941,0.094316542};
 		aside[]={0.14875832,-2.5336703e-007,0.98888308};
@@ -1894,7 +1894,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						name="zeus";
 						isPlayable=1;
 					};
 					id=394;
@@ -10102,7 +10101,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="zeus";
+							value="#adminLogged";
 						};
 					};
 				};
