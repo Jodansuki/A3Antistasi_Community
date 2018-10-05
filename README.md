@@ -1,9 +1,3 @@
-# Discontinued project
-
-In over a year this project added many features which are not as functional as it is the [current Antistasi](https://github.com/A3Antistasi/Antistasi-WotP), the official community discontinued this project in favor of the other.
-
----
-
 # Credits
 
 After 1.2 *Chris* coded many changes under the supervision of *RickyTan* and *Kendo* with the contribution of *Toshi* and *Tucks* for porting and templates.
