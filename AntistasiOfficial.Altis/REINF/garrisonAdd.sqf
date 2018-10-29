@@ -26,7 +26,6 @@ _chequeo = false;
 } forEach allUnits;
 
 if (_chequeo) exitWith {Hint "You cannot Recruit Garrison Units with enemies near the zone"};
-if (closeMarkersUpdating > 0) exitWith {hint format ["We are currently adding garrison units to this zone. HQ nearby zones require more time to add garrisons.\n\nPlease try again in %1 seconds.",closeMarkersUpdating]};
 [-1,-_coste] remoteExec ["resourcesFIA",2];
 _garrison = garrison getVariable [_marcador,[]];
 _garrison = _garrison + [_tipo];
@@ -36,7 +35,6 @@ hint format ["Soldier recruited.%1",[_marcador] call AS_fnc_getGarrisonInfo];
 
 if (spawner getVariable _marcador) then
 	{
-	closeMarkersUpdating = 10;
 	_forzado = false;
 	if (_marcador in forcedSpawn) then {forcedSpawn = forcedSpawn - [_marcador]; publicVariable "forcedSpawn"; _forzado = true};
 	[_marcador] remoteExec ["tempMoveMrk",2];
@@ -45,13 +43,7 @@ if (spawner getVariable _marcador) then
 		private ["_marcador","_forzado"];
 		_marcador = _this select 0;
 		_forzado = _this select 1;
-		while {closeMarkersUpdating > 1} do
-			{
-			sleep 1;
-			closeMarkersUpdating = closeMarkersUpdating - 1;
-			};
 		waitUntil {getMarkerPos _marcador distance [0,0,0] > 10};
-		closeMarkersUpdating = 0;
 		};
 	if (_forzado) then {forcedSpawn pushBackUnique _marcador; publicVariable "forcedSpawn"};
 	};
