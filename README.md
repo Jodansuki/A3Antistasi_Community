@@ -1,9 +1,3 @@
-# Discontinued project
-
-In over a year this project added many features which are not as functional as it is the [current Antistasi](https://github.com/A3Antistasi/Antistasi-WotP), the official community discontinued this project in favor of the other.
-
----
-
 # Credits
 
 After 1.2 *Chris* coded many changes under the supervision of *RickyTan* and *Kendo* with the contribution of *Toshi* and *Tucks* for porting and templates.
@@ -21,17 +15,10 @@ After 1.7.6 *Sparker* and *Jeroen* continued because the 1.7 bugs weren't possib
 # Mods
 
 The mission has no dependencies, however it can detect the following mods.
-* **CBA**, **TFAR**, RHS-**AFRF**+**GREF**(replace AAF, CSAT), RHS-**USAF**(replace NATO), **ACE**, **inidibi2**(multiple saves).
+* **CBA**, **TFAR**, RHS-**AFRF**+**GREF**(replace AAF, CSAT), RHS-**USAF**(replace NATO), **ACE**.
 
 Client side mods, as long they don't affect AI, are generally ok. Here's some suggestions
 * Dusty retexture project, JSRS, Enhanced Movement, Blastcore
 
 This is a steam collection: http://steamcommunity.com/sharedfiles/filedetails/?id=1097454107
-
----
-
-# Continuing this project 
-
-You can take files and modify at will, you won't be allowed to sign it as official, nor this version will be loaded on Official Servers
-Consider the complexity of this mission and the high goal of persistency; Arma engine has important limitation so we can't do whatever we desire, there are always bollenecks here and there. 
 
