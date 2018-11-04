@@ -1106,7 +1106,7 @@ aceadvmedical = [
 
 ];
 
-blockedWeapons = ["rhs_weap_svd","rhs_weap_rpg18","rhs_weap_strela","rhs_weap_svd_pso1","rhs_weap_pkp_pkas","rhs_weap_pkp_1p63","rhs_weap_pkp_1p29","rhs_weap_panzerfaust60","rhs_weap_mg42"];
+blockedWeapons = ["rhs_weap_svd","rhs_weap_rpg18","rhs_weap_strela","rhs_weap_svd_pso1","rhs_weap_pkp_pkas","rhs_weap_pkp_1p63","rhs_weap_pkp_1p29"];
 
 gear_allMagazines = [];
 {
