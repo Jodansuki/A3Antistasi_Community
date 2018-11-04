@@ -116,7 +116,7 @@ server setVariable ["genATlocked",true,true];
 server setVariable ["genAAlocked",true,true];
 
 //Pricing values for soldiers, vehicles
-{server setVariable [_x,50,true]} forEach [guer_sol_RFL,guer_sol_R_L,guer_sol_UN];
+{server setVariable [_x,50,true]} forEach [guer_sol_RFL,guer_sol_R_L,guer_sol_HMG];
 {server setVariable [_x,100,true]} forEach [guer_sol_MED,guer_sol_ENG,guer_sol_EXP,guer_sol_TL,guer_sol_AM];
 {server setVariable [_x,400,true]} forEach [guer_sol_AR,guer_sol_GL,guer_sol_MRK,guer_sol_LAT]; // Stef Temporarnely increase to balance the not requirement
 {server setVariable [_x,150,true]} forEach [guer_sol_SL,guer_sol_OFF,guer_sol_SN,guer_sol_AA];

@@ -3,19 +3,13 @@
 	<Package name="MissionNames">
 		<Container name="MissionNames_0">
 			<Key ID="STR_MISSION_NAME_SQM">
-				<Original>[SP/CO]- Antistasi 1.9.1.1 Altis Blufor</Original>
-				<Russian>[SP/CO]- Antistasi 1.9.1.1 Altis Blufor</Russian>
-				<Spanish>[SP/CO]- Antistasi 1.9.1.1 Altis Blufor</Spanish>
+				<Original>[SP/CO]- Antistasi 1.9.1.3 Altis Blufor</Original>
 			</Key>
 			<Key ID="STR_MISSION_NAME_INITVAR_SQF">
-				<Original>v 1.9.1.1</Original>
-				<Russian>v 1.9.1.1</Russian>
-				<Spanish>v 1.9.1.1</Spanish>
+				<Original>v 1.9.1.3</Original>
 			</Key>
 			<Key ID="STR_MISSION_NAME_EXT">
-				<Original>Antistasi 1.9.1.1</Original>
-				<Russian>Antistasi 1.9.1.1</Russian>
-				<Spanish>Antistasi 1.9.1.1</Spanish>
+				<Original>Antistasi 1.9.1.3</Original>
 			</Key>
 		</Container>
 	</Package>
@@ -3525,10 +3519,10 @@
 				<Russian>Стрелок ГП</Russian>
 				<Spanish>Granadero</Spanish>
 			</Key>
-			<Key ID="STR_D_REC_MORTAR">
-				<Original>Recruit Mortar</Original>
-				<Russian>Миномёт</Russian>
-				<Spanish>Mortero</Spanish>
+			<Key ID="STR_D_REC_HMG">
+				<Original>Recruit HMG</Original>
+				<Russian>Тяжелый пулемет</Russian>
+				<Spanish>Ametralladora pesada</Spanish>
 			</Key>
 			<Key ID="STR_D_REC_AT">
 				<Original>Recruit AT</Original>

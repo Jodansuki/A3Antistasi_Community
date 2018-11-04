@@ -28,7 +28,7 @@ guer_sol_RFL = "B_G_Soldier_F"; // playable
 guer_sol_SL = "B_G_Soldier_SL_F"; //
 guer_sol_SN = "B_G_Sharpshooter_F"; //
 guer_sol_TL = "B_G_Soldier_TL_F"; // playable, player-only
-guer_sol_UN = "B_G_Soldier_unarmed_F"; // mortar gunner
+guer_sol_HMG = "B_G_Soldier_unarmed_F"; // HMG gunner
 
 guer_POW = "B_G_Survivor_F"; //
 
@@ -47,7 +47,7 @@ guer_grp_team = "IRG_InfTeam";
 
 guer_flag = "Flag_FIA_F";
 
-guer_soldierArray = [guer_sol_RFL,guer_sol_R_L,guer_sol_UN,guer_sol_AR,guer_sol_MED,guer_sol_ENG,guer_sol_EXP,guer_sol_GL,guer_sol_TL,guer_sol_AM,guer_sol_MRK,guer_sol_LAT,guer_sol_SL,guer_sol_OFF,guer_sol_SN,guer_sol_AA];
+guer_soldierArray = [guer_sol_RFL,guer_sol_R_L,guer_sol_HMG,guer_sol_AR,guer_sol_MED,guer_sol_ENG,guer_sol_EXP,guer_sol_GL,guer_sol_TL,guer_sol_AM,guer_sol_MRK,guer_sol_LAT,guer_sol_SL,guer_sol_OFF,guer_sol_SN,guer_sol_AA];
 
 // ===== GEAR ===== \\
 guer_radio_TFAR = "tf_anprc152";

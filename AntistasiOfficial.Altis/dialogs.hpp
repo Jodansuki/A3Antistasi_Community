@@ -117,7 +117,7 @@ class garrison_recruit 			{
 
 	BTN_R1(107, $STR_D_REC_SQLEAD, "", "[guer_sol_SL] call garrisonAdd");
 	BTN_R2(109, $STR_D_REC_GRENA, "", "[guer_sol_GL] call garrisonAdd");
-	BTN_R3(108, $STR_D_REC_MORTAR, "", "[guer_sol_UN] call garrisonAdd");
+	BTN_R3(108, $STR_D_REC_HMG, "", "[guer_sol_HMG] call garrisonAdd");
 	BTN_R4(111, $STR_D_REC_AT, "", "[guer_sol_LAT] call garrisonAdd");
 
 	};
